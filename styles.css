@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    background: url('your-new-background-image.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body {
+    color: #fff;
+    min-height: 100vh;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.85); 
+}
+
+form {
+    background: rgba(25, 25, 25, 0.9); 
+    padding: 60px; 
+    border-radius: 20px; 
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8); 
+    max-width: 500px; 
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    border: 2px solid rgba(255, 255, 255, 0.1); 
+}
+
+label {
+    font-size: 24px;
+    margin-bottom: 15px;
+    display: inline-block;
+    color: #ffdd57; 
+    font-weight: bold;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 16px;
+    margin: 15px 0;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    font-size: 18px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+input[type="text"], input[type="email"], input[type="password"], select {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input:focus, select:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 10px rgba(255, 221, 87, 0.6); 
+    outline: none;
+}
+
+select {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+select option {
+    background-color: #333;
+    color: #fff;
+}
+
+button {
+    background-color: #ffdd57; 
+    color: #333;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 16px;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: #e6b800; 
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(230, 184, 0, 0.3); 
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #ffdd57;
+    text-align: center;
+}
+
+::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+    font-style: italic;
+}
+
+form:before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    bottom: -50px;
+    left: -50px;
+    z-index: -1;
+    background: rgba(255, 255, 255, 0.1);
+    filter: blur(10px);
+    border-radius: 30px;
+}
